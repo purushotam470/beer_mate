@@ -1,4 +1,4 @@
-class CreateUser < ActiveRecord::Migration[5.1]
+class CreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
       t.string :first_name, null: false
@@ -14,6 +14,7 @@ class CreateUser < ActiveRecord::Migration[5.1]
       t.string :password_digest
       t.boolean :emailable, default: true
       t.date :password_expire_date
+      t.timestamps
     end
   end
 end
