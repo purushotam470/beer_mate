@@ -19,6 +19,7 @@
 
 .byebug_history
 .idea
+.env
 
 #configuration files
 config/database.yml
