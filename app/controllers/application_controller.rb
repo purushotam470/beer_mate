@@ -1,4 +1,7 @@
 class ApplicationController < ActionController::API
+
+  protected
+  
   def authenticate_request
     auth_token = request.headers['Authorization']
     if auth_token
@@ -9,8 +12,6 @@ class ApplicationController < ActionController::API
       render json: {eroor: "auth token is missing"}, status: :forbidden
     end
   end
-
-  protected
 
   def payload user
     return nil unless user.present?
