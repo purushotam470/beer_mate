@@ -11,7 +11,8 @@ gem 'pg'
 gem 'rake'
 gem 'httpclient'
 gem 'bcrypt', '~> 3.1.11'
-gem 'jwt'
+gem 'jwt', '2.1.0'
+gem 'dotenv-rails'
 
 group :development do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
